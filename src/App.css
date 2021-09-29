@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.background-changed {
+  background: #1b1b1c;
+  transition: all 0.3s ease-in;
+}
+.background {
+  background: #fff;
+  transition: all 0.3s ease-out;
+}
+.app-body {
+  display: flex;
+  padding-top: 55px;
+  max-width: 1400px;
+  margin: 0 250px;
+}
+@media (max-width: 1400px) {
+  .app-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 0;
+  }
+  .btn-section {
+    display: none;
+  }
+  .app-btn {
+    display: none;
+  }
+}
+.btn-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+.app-btn {
+  width: 40px;
+  color: #fff;
+  font-weight: bold;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  background-color: #0177b7;
+  margin-left: 15px;
+  cursor: pointer;
+}
